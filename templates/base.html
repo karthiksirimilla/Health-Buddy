@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Health Buddy{% endblock %}</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    <!-- 🌟 Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="/">Health Buddy</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/chat">Chat</a></li>
+            <li><a href="/derma_bot">Skin Care</a></li>
+            <li><a href="/voice">Check Sickness</a></li>
+        </ul>
+    </nav>
+
+    <!-- 🌍 Page Content -->
+    <div class="content">
+        {% block content %}{% endblock %}
+    </div>
+
+</body>
+</html>
