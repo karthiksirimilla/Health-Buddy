@@ -1,0 +1,97 @@
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar .logo a {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #ffcc00;
+}
+
+/* 🔹 General Page Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* 📌 Page Content */
+.content {
+    padding: 50px;
+}
+
+/* 🎨 Buttons */
+.btn {
+    display: inline-block;
+    padding: 14px 30px;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-primary {
+    background: #27ae60;
+}
+
+.btn-primary:hover {
+    background: #1e8449;
+    transform: translateY(-3px);
+}
+
+.btn-chat {
+    background: #ff6b6b;
+}
+
+.btn-chat:hover {
+    background: #e63946;
+    transform: translateY(-3px);
+}
+
+.response-box {
+    background: #fff;
+    color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+.response-box p {
+    margin: 0;
+    font-size: 1.2em;
+}
+
