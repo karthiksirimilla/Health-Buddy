@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}Check Sickness{% endblock %}
+
+{% block content %}
+<div class="feature-page">
+    <h1>Voice-Based Sickness Detection</h1>
+    <p>Click the button below to analyze your voice.</p>
+    <button id="check-sickness" class="btn btn-primary">Analyze Voice</button>
+</div>
+
+<script>
+    document.getElementById("check-sickness").addEventListener("click", function() {
+        fetch("/voice-check", { method: "POST" })
+        .then(response => response.json())
+        .then(data => alert(`Sickness Status: ${data.status}`))
+        .catch(error => alert("Error: " + error));
+    });
+</script>
+{% endblock %}

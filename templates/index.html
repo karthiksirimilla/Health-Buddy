@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}Home - Health Buddy{% endblock %}
+
+{% block content %}
+<div class="hero">
+    <h1>Your Personal Health Assistant</h1>
+    <p>Analyze voice-based sickness and chat with Health Buddy!</p>
+    <div class="button-group">
+        <a href="/chat" class="btn btn-chat">Chat with Health Buddy</a>
+        <a href="/derma_bot" class="btn btn-primary mt-3">Chat with DermaDetect</a>
+        <a href="/voice" class="btn btn-primary">Check Sickness</a>
+        
+    </div>
+</div>
+{% endblock %}
